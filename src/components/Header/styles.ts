@@ -7,5 +7,6 @@ height: 18.5rem;
 overflow: hidden;
 background-image: url(${headerImage});
 background-position: center;
+background-size: cover;
 
 `

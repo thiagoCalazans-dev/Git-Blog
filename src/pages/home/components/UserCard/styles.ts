@@ -6,6 +6,8 @@ background: transparent;
 background-color: ${props => props.theme["base-700"]};
 gap: 2rem;
 margin-top: -5.5rem;
+border-radius: 10px;
+box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.2);
 
 img {
     height: 9.25rem;
@@ -19,16 +21,20 @@ img {
 `
 
 export const Content = styled.div`
+    width: 100%;
    margin-top: 2.5rem;
    margin-bottom: 2rem;
    margin-right: 2rem;
    display: flex;
-   flex-direction: column;
+   flex-direction: column;   
+  
+
 
    header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+   
 
     > strong {
         font-weight: 700;
@@ -55,18 +61,30 @@ export const Content = styled.div`
         }
 
 
-    }
+    }   
+   }
 
-    p {
+   p {   
+        
       color: ${props => props.theme["base-200"]};
       line-height: 1.6; 
       margin-top: 0.5rem;
-      flex: 1;
-      overflow: hidden;
+      flex: 1;        
     }
 
     footer {
-       margin-bottom: 2rem; 
+    display: flex;
+    gap: 1.5rem;     
     }
-   }
+`
+
+export const Username = styled.div`
+display: flex;
+gap: 0.5rem;
+align-items: center;
+
+svg {
+    color: ${props => props.theme["base-400"]}
+}
+
 `
